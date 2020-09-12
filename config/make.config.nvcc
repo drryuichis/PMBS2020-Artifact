@@ -1,0 +1,3 @@
+CC = nvcc
+CFLAGS = -O3 --ptxas-options=-v $(NVCCFLAGS)
+LDFLAGS = -lm

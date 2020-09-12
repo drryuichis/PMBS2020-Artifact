@@ -1,0 +1,6 @@
+main_*
+hpctoolkit-*
+*.o
+*.swp
+workspace/
+.vscode/
