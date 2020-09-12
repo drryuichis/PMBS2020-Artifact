@@ -1,0 +1,36 @@
+#!/bin/bash
+
+source nvprof_run.sh
+
+cd ..
+
+NVCCFLAGS="-arch=sm_30                 "    nvprof_run  cuda_gmem_8x8x8_opt-gpu             "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30                 "    nvprof_run  cuda_gmem_8x8x8_gpml_opt-gpu        "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30                 "    nvprof_run  cuda_gmem_32x32x1_opt-gpu           "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30                 "    nvprof_run  cuda_gmem_16x16x4_opt-gpu           "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30                 "    nvprof_run  cuda_gmem_8x8x4_opt-gpu             "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30                 "    nvprof_run  cuda_gmem_4x4x4_opt-gpu             "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30                 "    nvprof_run  cuda_gmem_8x8x8i_9x9x9pm_opt-gpu    "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30                 "    nvprof_run  cuda_smem_u_opt-gpu                 "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30                 "    nvprof_run  cuda_smem_eta_1_opt-gpu             "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30                 "    nvprof_run  cuda_smem_eta_3_opt-gpu             "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30                 "    nvprof_run  cuda_micikevicius_8x8_opt-gpu       "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30                 "    nvprof_run  cuda_micikevicius_16x16_opt-gpu     "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30 -maxrregcount=64"    nvprof_run  cuda_micikevicius_32x32_opt-gpu     "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30                 "    nvprof_run  cuda_micikevicius_32x16_opt-gpu     "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30                 "    nvprof_run  cuda_micikevicius_16x32_opt-gpu     "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30 -maxrregcount=64"    nvprof_run  cuda_micikevicius_64x16_opt-gpu     "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30 -maxrregcount=64"    nvprof_run  cuda_micikevicius_16x64_opt-gpu     "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30                 "    nvprof_run  cuda_micikevicius_gmem_opt-gpu      "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30                 "    nvprof_run  cuda_nguyen25d_16x16_opt-gpu        "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30                 "    nvprof_run  cuda_nguyen25d_16x8_opt-gpu         "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30                 "    nvprof_run  cuda_nguyen25d_8x16_opt-gpu         "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30                 "    nvprof_run  cuda_nguyen25d_8x8_opt-gpu          "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30                 "    nvprof_run  cuda_nguyen25d_irt_16x16_opt-gpu    "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30                 "    nvprof_run  cuda_nguyen25d_idx_16x16_opt-gpu    "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30                 "    nvprof_run  cuda_matsu25d_8x8_opt-gpu           "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30                 "    nvprof_run  cuda_matsu25d_16x8_opt-gpu          "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30                 "    nvprof_run  cuda_matsu25d_16x16_opt-gpu         "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30                 "    nvprof_run  cuda_matsu25d_32x16_opt-gpu         "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30 -maxrregcount=64"    nvprof_run  cuda_matsu25d_32x32_opt-gpu         "--grid 300 --nsteps 5 $*"
+NVCCFLAGS="-arch=sm_30                 "    nvprof_run  cuda_semi_opt-gpu                   "--grid 300 --nsteps 5 $*"
